@@ -46,6 +46,7 @@ return array(
     'Laminas\\ZendFrameworkBridge\\' => array($vendorDir . '/laminas/laminas-zendframework-bridge/src'),
     'Laminas\\Stdlib\\' => array($vendorDir . '/laminas/laminas-stdlib/src'),
     'Laminas\\Mime\\' => array($vendorDir . '/laminas/laminas-mime/src'),
+    'Hyperf\\WebSocketServer\\' => array($vendorDir . '/hyperf/websocket-server/src'),
     'Hyperf\\Watcher\\' => array($vendorDir . '/hyperf/watcher/src'),
     'Hyperf\\Utils\\' => array($vendorDir . '/hyperf/utils/src'),
     'Hyperf\\Testing\\' => array($vendorDir . '/hyperf/testing/src'),
