@@ -3008,6 +3008,65 @@
         ]
     },
     {
+        "name": "hyperf/watcher",
+        "version": "v2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hyperf/watcher.git",
+            "reference": "c74609b4da7131dfefc9960eb3075170db9c4153"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hyperf/watcher/zipball/c74609b4da7131dfefc9960eb3075170db9c4153",
+            "reference": "c74609b4da7131dfefc9960eb3075170db9c4153",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
+        },
+        "require": {
+            "ext-swoole": ">=4.5",
+            "hyperf/command": "2.0.*",
+            "hyperf/di": "2.0.*",
+            "hyperf/framework": "2.0.*",
+            "php": ">=7.2"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.14",
+            "hyperf/testing": "2.0.*",
+            "phpstan/phpstan": "^0.12",
+            "swoole/ide-helper": "dev-master"
+        },
+        "time": "2020-08-05T03:13:01+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            },
+            "hyperf": {
+                "config": "Hyperf\\Watcher\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Hyperf\\Watcher\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "keywords": [
+            "hyperf",
+            "php"
+        ]
+    },
+    {
         "name": "jetbrains/phpstorm-stubs",
         "version": "v2019.3",
         "version_normalized": "2019.3.0.0",
@@ -4057,6 +4116,58 @@
             }
         ],
         "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names"
+    },
+    {
+        "name": "phper666/hyperf-server-command",
+        "version": "v1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phper666/hyperf-server-command.git",
+            "reference": "0ccf1105c9835d35bff956b054cb3601c0f9ad10"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phper666/hyperf-server-command/zipball/0ccf1105c9835d35bff956b054cb3601c0f9ad10",
+            "reference": "0ccf1105c9835d35bff956b054cb3601c0f9ad10",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
+        },
+        "require": {
+            "php": ">=7.2"
+        },
+        "suggest": {
+            "hyperf/command": "required hyperf/command ~2.0.0 OR required hyperf/command ~1.1.0"
+        },
+        "time": "2020-07-28T05:38:15+00:00",
+        "type": "library",
+        "extra": {
+            "hyperf": {
+                "config": "Phper666\\HyperfServiceCommand\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Phper666\\HyperfServiceCommand\\": "src/"
+            },
+            "files": []
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "liyuzhao",
+                "email": "562405704@qq.com"
+            }
+        ]
     },
     {
         "name": "phpoption/phpoption",

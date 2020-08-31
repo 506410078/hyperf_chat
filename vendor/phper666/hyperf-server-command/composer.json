@@ -1,0 +1,29 @@
+{
+  "name": "phper666/hyperf-server-command",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "liyuzhao",
+      "email": "562405704@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Phper666\\HyperfServiceCommand\\": "src/"
+    },
+    "files": [
+    ]
+  },
+  "suggest": {
+    "hyperf/command": "required hyperf/command ~2.0.0 OR required hyperf/command ~1.1.0"
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Phper666\\HyperfServiceCommand\\ConfigProvider"
+    }
+  }
+}
