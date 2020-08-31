@@ -47,6 +47,7 @@ return array(
     'Laminas\\Stdlib\\' => array($vendorDir . '/laminas/laminas-stdlib/src'),
     'Laminas\\Mime\\' => array($vendorDir . '/laminas/laminas-mime/src'),
     'Hyperf\\WebSocketServer\\' => array($vendorDir . '/hyperf/websocket-server/src'),
+    'Hyperf\\WebSocketClient\\' => array($vendorDir . '/hyperf/websocket-client/src'),
     'Hyperf\\Watcher\\' => array($vendorDir . '/hyperf/watcher/src'),
     'Hyperf\\Utils\\' => array($vendorDir . '/hyperf/utils/src'),
     'Hyperf\\Testing\\' => array($vendorDir . '/hyperf/testing/src'),

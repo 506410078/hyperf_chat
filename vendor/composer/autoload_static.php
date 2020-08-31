@@ -97,6 +97,7 @@ class ComposerStaticInit0fd316c8904e8fbcffc0ac3ebf3587b6
         'H' => 
         array (
             'Hyperf\\WebSocketServer\\' => 23,
+            'Hyperf\\WebSocketClient\\' => 23,
             'Hyperf\\Watcher\\' => 15,
             'Hyperf\\Utils\\' => 13,
             'Hyperf\\Testing\\' => 15,
@@ -329,6 +330,10 @@ class ComposerStaticInit0fd316c8904e8fbcffc0ac3ebf3587b6
         'Hyperf\\WebSocketServer\\' => 
         array (
             0 => __DIR__ . '/..' . '/hyperf/websocket-server/src',
+        ),
+        'Hyperf\\WebSocketClient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/websocket-client/src',
         ),
         'Hyperf\\Watcher\\' => 
         array (
