@@ -15,8 +15,8 @@ use Hyperf\HttpServer\Router\Router;
 //Router::get('/get', 'App\Controller\IndexController@get');
 //Router::get('/get', [\App\Controller\IndexController::class, 'get']);
 
-//Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@index');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/home', 'App\Controller\IndexController@index');
 
 Router::addServer('ws', function () {
-    Router::get('/', 'App\Controller\WebSocketController');
+    Router::get('/websocket', 'App\Controller\WebSocketController');
 });
