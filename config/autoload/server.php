@@ -28,7 +28,7 @@ return [
         [
             'name' => 'ws',
             'type' => Server::SERVER_WEBSOCKET,
-            'host' => '121.42.228.99',
+            'host' => '172.31.47.178',
             'port' => 9502,
             'sock_type' => SWOOLE_SOCK_TCP,
             'callbacks' => [
