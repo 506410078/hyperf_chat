@@ -19,8 +19,18 @@ class IndexController extends AbstractController
         $method = $this->request->getMethod();
 
         return [
-            'method' => $method.'sss',
+            'method' => $method,
             'message' => "Hello ya hello  {$user}. {$id} .",
+        ];
+    }
+    public function en($id)
+    {
+        $user = $this->request->input('user', 'Hyperf');
+        $method = $this->request->getMethod();
+
+        return [
+            'method' => $method,
+            'message' => "Hello en hello  {$user}. {$id} .",
         ];
     }
 }

@@ -15,7 +15,13 @@ use Hyperf\HttpServer\Router\Router;
 //Router::get('/get', 'App\Controller\IndexController@get');
 //Router::get('/get', [\App\Controller\IndexController::class, 'get']);
 
-Router::addRoute(['GET', 'POST', 'HEAD'], '/home', 'App\Controller\IndexController@index');
+Router::addGroup('/index/',function(){
+    Router::addRoute(['GET'],'index','App\Controller\IndexController@index');
+    Router::addRoute(['GET'],'en','App\Controller\IndexController@en');
+});
+Router::addGroup('/en/',function(){
+    Router::addRoute(['GET','POST'],'index/{id}/[{name}]','App\Controller\EncryptController@index');
+});
 
 Router::addServer('ws', function () {
     Router::get('/', 'App\Controller\WebSocketController');
