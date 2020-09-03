@@ -20,7 +20,9 @@ Router::addGroup('/index/',function(){
     Router::addRoute(['GET'],'en','App\Controller\IndexController@en');
 });
 Router::addGroup('/en/',function(){
-    Router::addRoute(['GET','POST'],'index/{id}/[{name}]','App\Controller\EncryptController@index');
+    Router::addRoute(['GET','POST'],'en/{data}[/{iv}]','App\Controller\EncryptController@en');
+    Router::addRoute(['GET','POST'],'de/{str}[/{iv}]','App\Controller\EncryptController@de');
+    Router::addRoute(['GET','POST'],'lists','App\Controller\EncryptController@lists');
 });
 
 Router::addServer('ws', function () {
